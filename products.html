@@ -14,7 +14,7 @@
  <nav class="bg bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
    <a href="index.html"><h1 class="text-2xl ">GREENDEN</h1></a> 
 
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6  md:hidden">
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6  md:hidden">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
       
@@ -37,50 +37,78 @@
 
 
  </nav>
+  <!-- side nav bar -->
+  <section id="sidenav" class="bg-green-100 fixed z-20 top-0  transition-all duration-1000" style=" width: 50%; height: 100vh; right: -50%;"> 
+
+    <div class="text-right p-5">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+
+    </div>
+
+
+    <ul class="flex flex-col gap-10 items-center text-gray-600  ">
+        <li>
+            <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a  class="hover:underline hover:text-black" href="products.html">Products</a>
+        </li>
+
+        <li>
+            <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+        </li>
+
+    </ul>
+
+
+
+   </section>
+
  <!-- products section -->
   <section class="text-center">
     <h1 class="font-bold text-3xl mt-10">Our Products</h1>
-    <input class="border border-black p-2 w-2/3 mt-2" placeholder="Search for a products">
+    <input id="search" class="border border-black p-2 w-2/3 mt-2" placeholder="Search for a products">
 
-    <div class="sm:grid grid-cols-1 mt-4 md:grid grid-cols-4 gap-4 ">
+    <div id="productcontainer" class="sm:grid grid-cols-1 mt-4 md:grid grid-cols-4 gap-4 ">
         <div class=" p-2 m-2 ">
             <img class="inline hover:shadow-xl transform hover:-translate-y-2" src="./images/bestseller1.png">
-            <p>yellow Plant</p>
+            <h1>yellow plant</h1>
             <p>$20</p>
         </div>
         <div class=" p-2 m-2  ">
             <img class="inline  hover:shadow-xl transform hover:-translate-y-2"  src="./images/bestseller2.png">
-            <p>rose Plant</p>
+            <h1>rose plant</h1>
             <p>$20</p>
         </div>
         <div class="p-2 m-2  ">
             <img class="inline  hover:shadow-xl transform hover:-translate-y-2"  src="./images/bestseller3.png">
-            <p>lily Plant</p>
+            <h1>lily plant</h1>
             <p>$20</p>
         </div>
         <div class=" p-2 m-2  ">
             <img class="inline  hover:shadow-xl transform hover:-translate-y-2"  src="./images/bestseller4.png">
-            <p>Plant</p>
+            <h1>plant</h1>
             <p>$20</p>
         </div>
         <div class="p-2 m-2  ">
             <img class="inline  hover:shadow-xl transform hover:-translate-y-2"  src="./images/bestseller3.png">
-            <p>lily plant</p>
+            <h1>lily plant</h1>
             <p>$20</p>
         </div>
         <div class=" p-2 m-2  ">
             <img class="inline  hover:shadow-xl transform hover:-translate-y-2"  src="./images/bestseller1.png">
-            <p>yellow Plant</p>
+            <h1>rose plant</h1>
             <p>$20</p>
         </div>
         <div class=" p-2 m-2  ">
             <img class="inline  hover:shadow-xl transform hover:-translate-y-2"  src="./images/bestseller4.png">
-            <p> Plant</p>
+            <h1>plant</h1>
             <p>$20</p>
         </div>
         <div class="p-2 m-2  ">
             <img class="inline  hover:shadow-xl transform hover:-translate-y-2"  src="./images/bestseller2.png">
-            <p>rose Plant</p>
+          <h1>rose plant</h1>
             <p>$20</p>
         </div>
     </div>
@@ -93,6 +121,12 @@
     <p>@2024 greenden.com</p>
 
  </section>
+
+
+
+ <script src="product.js">
+
+ </script>
  
     
 </body>
